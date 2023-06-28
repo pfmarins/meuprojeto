@@ -1,0 +1,75 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 8px;
+}
+
+#hero {
+  width: 592px;
+  /*margin é o agrupamento de todos os lados da margen- chamado de short rand*/
+  margin: 0 auto 72px;
+
+  /*1 especificações - ambas laterais
+    2 especificações - top/bottom e ambas laterais
+    3 especificações - top - ambas laterais - bottom
+    3 especificações - top - lateral right - bottom - lateral left */
+  /*
+   auto - automaticamente vai ajustar os espaços de largura ou altura
+   top - Margem em cima
+   bottom - Margem em baixo 
+   left - Margem esquerda
+   right - Margem direita
+ */
+}
+
+#hero img {
+  margin-bottom: 72px;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+  margin-bottom: 32px;
+  /*peso da fonte*/
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+span,
+a {
+  color: #FF9900;
+}
+
+p,
+#footer {
+  color: #7D7987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+/*De trás pra frente, pegue o "a" que anterior a ele tenha um "a", e aplica esse css nele*/
+#footer a+a {
+  margin-left: 29px;
+}
+
+#footer #line {
+  width: 568px;
+  height: 0;
+  /*Sempre que for definido o tamanho, provavelmente será necessário definir as margens*/
+  margin: 0 auto 8px;
+  /*solid é o modelo da linha*/
+  border: 1px solid #ECEFF2;
+
+}
+
+#balls {
+  /*Fixa o elemento na tela, é uma camada em cima da pagina html*/
+  position: fixed;
+  /*Bottom é um dos elementos compativeis com o position, outros exemplos: top, right, left*/
+  bottom: 0px;
+  right: 0px;
+}
